@@ -50,7 +50,7 @@
                             <br> eiusmod tempor incididunt ut
                         </h1>
                     </div>
-                    <img src="img/1.png" class="d-block w-100" alt="first">
+                    <img src="img/img1.png" class="d-block w-100" alt="first">
 
                 </div>
 
@@ -61,7 +61,7 @@
                             <br> eiusmod tempor incididunt ut
                         </h1>
                     </div>
-                    <img src="img/2.png" class="d-block w-100" alt="second">
+                    <img src="img/img2.png" class="d-block w-100" alt="second">
                 </div>
                 <div class="carousel-item">
                     <div class="gallery">
@@ -70,7 +70,7 @@
                             <br> eiusmod tempor incididunt ut
                         </h1>
                     </div>
-                    <img src="img/3.png" class="d-block w-100" alt="third">
+                    <img src="img/img3.png" class="d-block w-100" alt="third">
                 </div>
             </div>
             <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
@@ -115,37 +115,42 @@
                         dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem
                     </p>
 
-                    </form>
-                    <form id="contact-form" name="myForm">
+                </form>
+                <form id="contact-form" name="myForm" class="form" action="#" onsubmit="return validateForm()" role="form">
 
-                        <div class="form-group">
-                            <label class="form-label"  ></label>
-                            <input type="text"  placeholder="Navn">
-                            
-                        </div>
+                    <div class="form-group">
+                        <label class="form-label" id="nameLabel" for="name"></label>
+                        <input type="text" class="form-control" id="name" name="name" placeholder="Navn" tabindex="1">
+                        <p id="msg0"></p>
+                    </div>
 
-                        <div class="form-group">
-                            <label class="form-label" id="emailLabel" for="email"></label>
-                        </div>
+                    <div class="form-group">
+                        <label class="form-label" id="emailLabel" for="email"></label>
+                        <input type="email" class="form-control" id="email" name="email" placeholder="Email" tabindex="2">
+                        <p id="msg1"></p>
+                    </div>
 
-                        <div class="form-group">
-                            <label class="form-label"  for="number"></label>
-                        </div>
-
-
-                        <div class="form-group">
-                            <input type="checkbox" name="" value="">
-                            <label for="tilmeld">Jeg giver hermed tilladelse til, at Nordlid må gemme og bruge min data til interne projekter.
-                                Jeg kan til hver en tid tilbagekalde min accept.</label>
-                            <br>
-                        </div>
+                    <div class="form-group">
+                        <label class="form-label" id="numberLabel" for="number"></label>
+                        <input oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" type="number"
+                            maxlength="8" class="form-control" id="number" name="number" placeholder="Tlf" tabindex="3">
+                        <p id="msg2"></p>
+                    </div>
 
 
-                        <button name="_submit" id="_submit" type="submit" class="btn btn-default btn-gap">SEND</button>
+                    <div class="form-group">
+                        <input type="checkbox" name="tilmeld" value="tilmeld">
+                        <label for="tilmeld">Jeg giver hermed tilladelse til, at Nordlid må gemme og bruge min data til interne projekter.
+                            Jeg kan til hver en tid tilbagekalde min accept.</label>
+                        <br>
+                    </div>
+
+
+                    <button name="_submit" id="_submit" type="submit" class="btn btn-default btn-gap">SEND</button>
 
 
 
-                    </form>
+                </form>
                 </div>
             </div>
         </div>
@@ -159,11 +164,11 @@
             </div>
             <div class="col-sm-4 col-m-4 col-l-4">
                 <img src="img/speak.png" alt="talkicon">
-                <h3> >Lorem ihosum dolor sit amet, consectetur adihpiscing elit</h3>
+                <h3> Lorem ihosum dolor sit amet, consectetur adihpiscing elit</h3>
             </div>
             <div class="col-sm-4 col-m-4 col-l-4">
                 <img src="img/gold.png" alt="prizeicon">
-                <h3>>Lorem ihosum dolor sit amet, consectetur adihpiscing elit </h3>
+                <h3>Lorem ihosum dolor sit amet, consectetur adihpiscing elit </h3>
             </div>
         </div>
     </div>

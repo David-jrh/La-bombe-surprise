@@ -53,7 +53,43 @@
     text-align: center;
     color: #fff;
 }
+.form-group {
+    background-color: #fff;
+    min-height: 50px;
+    color: #304a5f;
+}
 
+input[type=text],
+input[type=email],
+input[type=number],
+select {
+    display: inline-block;
+    border-bottom: 1px solid #304a5f;
+    border-top: transparent;
+    border-right: transparent;
+    border-left: transparent;
+    border-radius: 0%;
+    font-size: .8em;
+}
+
+#msg0,
+#msg1,
+#msg2 {
+    color: #e6007e !important;
+    font-size: .8em;
+}
+
+.btn {
+    background-color: #e6007e !important;
+    color: #fff !important;
+    width: 200px;
+    border-radius: 0px !important;
+}
+
+label {
+    font-size: .6em;
+    max-width: 450px;
+}
 
 
 @media only screen and (max-width: 1000px) {
