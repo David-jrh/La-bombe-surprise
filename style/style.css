@@ -3,3 +3,65 @@
     margin: 0 auto;
     font-family: 'Open Sans', sans-serif;
 }
+
+
+
+.top h2 {
+    color: #304a5f;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    font-size: 1.8em !important;
+    padding: 0px 15px;
+    max-width: 999px;
+}
+
+.row h3 {
+    font-weight: 200 !important;
+}
+
+.gallery h1 {
+    text-align: left;
+    padding-left: 20%;
+}
+
+.gallery {
+    top: 50%;
+    transform: translateY(-50%);
+    bottom: initial;
+    font-weight: 300;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#headerPic {
+    display: none;
+}
+
+
+
+
+.cointain3 {
+    background-color: #2a697b;
+    margin-top: 5%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.cointain3 .row {
+    padding: 2%;
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+    color: #fff;
+}
+
+
+
+@media only screen and (max-width: 1000px) {
+    .gallery h1 {
+        font-size: 2em !important;
+    }
+    .top h2 {
+        padding: 1.2em;
+    }
+
+}
